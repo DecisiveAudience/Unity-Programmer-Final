@@ -15,20 +15,17 @@ public class RaycastExample : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                print(hit.collider.isTrigger);
                 if (Script = hit.transform.gameObject.GetComponent<Objects>())
                 {
                     Script.clickedEvent();
                 }
-                
+                /*if (Script = hit.transform.gameObject.GetComponent<Stone>())
+                {
+                    Script.clickedEvent();
+                }
+                */
             }
 
-
-            if (Script = null)
-            {
-                Script = hit.transform.gameObject.GetComponent<Objects>();
-                Script.clickedEvent();
-            }
         }
 
 
